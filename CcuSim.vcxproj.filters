@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c2ce360d-a28f-4a3c-9ee5-f00be7647788}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{62c2f64e-4067-46ca-b150-70536d40feee}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{3d9bd0e4-f514-42ef-98d7-0cd7498f084e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="INC">
+      <UniqueIdentifier>{ffa4539f-71e8-4b2b-9e0a-645e555c0d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditLog">
+      <UniqueIdentifier>{faed6e64-6376-4a8b-96c7-23c778b400b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="List">
+      <UniqueIdentifier>{299aa1f0-376d-4389-8f95-ed6a4c504633}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CcuSim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CcuSimDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CIdAet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CnfSys.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTcpIp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditLog\EditLog.cpp">
+      <Filter>EditLog</Filter>
+    </ClCompile>
+    <ClCompile Include="EditLog\SubclassWnd.cpp">
+      <Filter>EditLog</Filter>
+    </ClCompile>
+    <ClCompile Include="List\ReportCtrl.cpp">
+      <Filter>List</Filter>
+    </ClCompile>
+    <ClCompile Include="List\ToolTipCtrlTrack.cpp">
+      <Filter>List</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CcuSim.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CcuSim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CcuSimDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CIdAet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CnfSys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTcpIp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\_aetipl.h">
+      <Filter>INC</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\_define.h">
+      <Filter>INC</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\_pdw.h">
+      <Filter>INC</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\_sysmsg.h">
+      <Filter>INC</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\_system.h">
+      <Filter>INC</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\_type.h">
+      <Filter>INC</Filter>
+    </ClInclude>
+    <ClInclude Include="BSP\hw_def.h">
+      <Filter>INC</Filter>
+    </ClInclude>
+    <ClInclude Include="BSP\hw_str.h">
+      <Filter>INC</Filter>
+    </ClInclude>
+    <ClInclude Include="EditLog\debug.h">
+      <Filter>EditLog</Filter>
+    </ClInclude>
+    <ClInclude Include="EditLog\EditLog.h">
+      <Filter>EditLog</Filter>
+    </ClInclude>
+    <ClInclude Include="EditLog\editlog_stream.h">
+      <Filter>EditLog</Filter>
+    </ClInclude>
+    <ClInclude Include="EditLog\SubclassWnd.h">
+      <Filter>EditLog</Filter>
+    </ClInclude>
+    <ClInclude Include="List\ReportCtrl.h">
+      <Filter>List</Filter>
+    </ClInclude>
+    <ClInclude Include="List\ToolTipCtrlTrack.h">
+      <Filter>List</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\BigOff.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\BlueBigOn.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\CcuSim.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\CcuSim.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

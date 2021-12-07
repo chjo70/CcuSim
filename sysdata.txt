@@ -1,0 +1,319 @@
+###########################################################
+#			SYSTEM PARAMETER
+#												00.May, Jo!
+#								 Ver 1.0(00-05-16 14:03:00)
+###########################################################
+
+###########################################################
+# Default system parameter setting
+# Download System parameter
+#Mode				701124
+# Set up System parameter
+Mode				770811
+
+###########################################################
+Ver					7.12a
+###########################################################
+
+###########################################################
+# This following system variable is admited variables in hidden page.
+###########################################################
+
+spaoadiff1			2
+spaoadiff2			2
+spaoadiff3			2
+
+spfrqdiff1			2
+spfrqdiff2			2
+spfrqdiff3			2
+ 
+sptrkaoa			5
+sptrkfixfrq			4
+sptrkagifrq			3
+
+spmrgaoa			3
+spmrgfrq			3
+ 
+spminstb			20
+spminjit			20
+spminrefpri			5
+spminagipri			5
+ 
+spshiftaoa			4
+spshiftfrq			4
+ 
+###########################################################
+# Control System Parameter
+###########################################################
+#
+# Scan Level
+ScanLevel			6
+
+###########################################################
+# AOA's range
+_spRxdfAoaLow		23
+_spRxdfAoaMid		14
+_spRxdfAoaHgh		10
+
+###########################################################
+# FRQ's range		2
+_spRxdfFrqLow		2
+_spRxdfFrqMid		2
+_spRxdfFrqHgh		2
+
+###########################################################
+# Freq's range
+PdwBand1Low			796
+PdwBand1Hgh			3200
+PdwBand2Low			573
+PdwBand2Hgh			3776
+PdwBand3Low			86
+PdwBand3Hgh			8090
+
+###########################################################
+# Emitter merge
+# Direction, 1->3 times, 00-09-20 09:43:31
+MergeAoaLow			42
+MergeAoaMid			27
+MergeAoaHgh			18
+
+# Freq.
+# Stable Freq, 1->3 times, 00-09-20 09:43:31
+MergeStableFrqLow	6
+MergeStableFrqMid	6
+MergeStableFrqHgh	6
+
+# Agile Freq.
+MergeAgiFrqMean		10
+MergeAgiFrqIn		20
+MergeAgiFrqOut		10
+
+MergeFrqPatPrd		5
+
+# Agile Freq. Pattern
+MergeAgiLowFrqPat	4
+MergeAgiMidFrqPat	4
+MergeAgiHghFrqPat	4
+
+# PRI.
+MergeStablePri 		40
+MergeAgiPriMean		40
+MergeAgiPriIn		20
+MergeAgiPriOut		10
+MergeJitPer			1
+MergeAgileBWLow     1600
+MergeAgileBWMid     800
+MergeAgileBWHgh     667
+
+# PRI Pattern
+MergeAgiPriPat		40
+MergePriPatPrd		5
+
+# SCAN
+MergeScnPrd			5
+
+# SCAN
+MergePW				100
+
+# Modify
+ModifyMethod		2
+
+###########################################################
+# Track & Scan Window Cell
+# Stable Freq.
+TkWcStableFrqLow	4
+TkWcStableFrqMid	4
+TkWcStableFrqHgh	4
+
+# Agile Freq.
+TkWcAgileFrqLow		8
+TkWcAgileFrqMid		8
+TkWcAgileFrqHgh		8
+
+TkWcAgileRatio		10
+
+# Aoa
+TkWcAoaLow			42
+TkWcAoaMid			27
+#TkWcAoaHgh			18
+#TkWcAoaHgh			48
+TkWcAoaHgh			114
+
+# CW
+TkWcCWTo			3
+TkWcCWPc			50
+
+# Minimum Pulse Count for Normal AET
+TkWcNormPc			150
+TkWcAbnormPc		256
+
+# Chirp AET
+TkWcChirpTo			3
+TkWcChirpPc			50
+
+# Min. of Scan and Pattern period	( 1.8 )
+TkWcTimesOfScan		1.8
+TkWcTimesOfPatPrd	5
+
+# Track Window Cell Timeout and pulsecounts
+PdwTkToLow			1
+PdwTkToHgh			240
+PdwTkPcLow			50
+PdwTkPcHgh			500
+
+# Scan Collecting Time 
+ScWcToStep1			600
+ScWcToStep2			1500
+ScWcToStep3			3000
+ScWcToStep4			7000
+ScWcToStep5			11000
+
+###########################################################
+# Anal System Parameter
+###########################################################
+# NSP
+# //////////  탐지 System Parameter 
+
+# //수집할 수 있는  최대 PDW의 수 ( MPC ~ PDW_MAX )
+_sp.np.Pdw_Max			256
+							
+# // 방위 히스토 BIN 크기 = 2^N	  ( 0 ~ 9 ) 
+_sp.np.Aoa_Shift_Cnt	4	
+	
+# // 방위 히스토그램 PEAK 임계값  ( 1 ~ _sp.np.Max_Pdw )
+_sp.np.Aoa_Peak_Thr		5	
+
+# // 방위 히스토그램 범위 임계값  ( 0 ~ _sp.np.Max_Pdw )
+_sp.np.Aoa_Hist_Thr		0
+
+# // 방위 그룹 범위 margin        ( 0 ~ ( 1 << _sp.np.Aoa_Shift_Cnt ) )
+_sp.np.Aoa_Range_Margin	0
+
+# // 주파수 히스토 BIN 크기 = 2^N   ( 4 ~ 12 )
+_sp.np.Freq_Shift_Cnt	4
+
+# // 주파수 히스토그램 PEAK 임계값  ( 1 ~ _sp.np.Max_Pdw )
+_sp.np.Freq_Peak_Thr	15	
+
+# // 주파수 히스토그램 범위 임계값  ( 0 ~ _sp.np.Max_Pdw )
+_sp.np.Freq_Hist_Thr	0
+
+# // 주파수 그룹 범위 margin  ( 0 ~ ( 1 << _sp.np.Freq_Shift_Cnt ) )
+_sp.np.Freq_Range_Margin 0
+
+# // 탐지, 하나의 그룹에서 REPORT될 NEW AET의 개수를 선언 ( 1 ~ (_sp.np.Pdw_Max / MPC ) )
+_sp.np.Rpt_Aet_Cnt	     2	
+
+# KSP
+# //////////  추적 System Parameter 
+
+# // 수집할 수 있는  최대 PDW의 수 ( MPC ~ PDW_MAX )
+_sp.kp.Pdw_Max			500
+	
+# // 추적, 하나의 그룹에서 REPORT될 NEW AET의 개수를 선언 ( 1 ~ (_sp.np.Pdw_Max / MPC ) )
+_sp.kp.Rpt_Aet_Cnt	    1
+
+# SAP
+# Sampling Time ( if 0, automatic sampling...)
+# // 수집할 수 있는  최대 PDW의 수 ( MPC ~ PDW_MAX )
+_sp.sc.Pdw_Max			1024
+
+SamplingTimeOfStep1	0
+SamplingTimeOfStep2	200000
+SamplingTimeOfStep3	500000
+SamplingTimeOfStep4	1000000
+SamplingTimeOfStep5	2000000
+
+# Interpolation Pulse Count
+InterPulseOfStep1	100
+InterPulseOfStep2	20
+InterPulseOfStep3	8
+InterPulseOfStep4	4
+InterPulseOfStep5	2
+
+# Maximul Scan Period of Track Signal
+MaxScanPrdOfTrkSig	2000000
+
+# COMMON
+# ///////////////		공통 System Parameter
+
+# // CW신호를 분석하기 위한 최소 CW개수 ( 1 ~ _sp.cm.Mpc )
+_sp.cm.Cw_Min_Cnt		1
+
+# // Stable 펄스열의 최소 펄스수 (Min. Pulse Count) ( 1 ~ _sp.**.Pdw_Max )
+# /debug, 010109
+_sp.cm.Mpc				20
+	
+# // Jitter 펄스열의 최소 펄스수 (Min. Jitter Pulse Count) ( 1 ~ _sp.**.Pdw_Max )
+_sp.cm.Mjpc				20
+	
+# // 기준 펄스열의 펄스수 (Reference Pule Count) ( 1 ~ < _sp.cm.Mpc )
+_sp.cm.Rpc				5
+
+# // Jitter Stagger 기준펄스열의 최소 펄스수 (Min. Jitter Stagger Pulse Count)	( 1 ~ < _sp.cm.Mjpc )
+_sp.cm.Rjgpc			5
+
+# // 최대 허용 STABLE MISS 개수 ( 1 ~ 10? )
+_sp.cm.Stb_Max_Miss		6
+	
+# // 최대 허용 JITTER MISS 개수 ( 1 ~ 3 )	
+_sp.cm.Jit_Max_Miss		3	
+
+# // 반사파 처리 구간	 ( 0 ~ 600 : 0 ~ 30 us 경로차 최대 90Km )	
+_sp.cm.Reflex_Zone		200
+	
+# // 반사파처리 이전에 High PRF부터 처리 ( 200 ~ 1600 : 10 ~ 80 us )	
+_sp.cm.Hprf_First_Pri	1600
+
+# // 최대 탐지 jitter %  990226 ( 24 ~ 30 )
+_sp.cm.Jitter_P			30	
+
+# // 500ns / (50 ns) STABLE DTOA MAX MEAN ERROR ( 3 ~ 10 )
+_sp.cm.Dtoa_Sd			10
+	
+# // low : 1.5 / (0.5MHz), mid : 3.75 / (1.25MHz), High : 4.5 / (1.5MHz) ( 1 ~ 5 )	
+_sp.cm.Freq_Sd			3
+	
+# // Jitter Stagger분석에서 Stagger로 추출된 펄스수의 비율 경계, 이상이면 Stagger로 판정 ( 10 ~ 100 )	
+_sp.cm.Jstg_Pt_P		50
+	
+# // 최대 허용 병합 JITTER MISS 개수 ( 1 ~ 10 )
+_sp.cm.Jit_Merge_Miss_Cnt	3
+							
+
+# // 패턴 분석 
+# // 패턴 분석에 필요한 최소 펄스수 ( 20 ~ 200 )
+_sp.cm.Pat_Min_Cnt		20
+	
+# // Least Half Period 최소 반주기 펄스수 ( 5 ~ 50 )
+_sp.cm.Lhp				5
+
+# // 패턴에서 LHP동안 평균을 가로지르는 최대 회수 ( 2 ~ 5 )	
+_sp.cm.Cross_Over		2
+	
+# // 패턴 확인에 사용되는 최소반주기의 회수 ( 2 ~ 10 )	
+_sp.cm.Lhp_Thresh		4
+	
+# // 패턴 확인에서 최대 bad 회수  ( 2 ~ 10 )
+_sp.cm.Bad_Max			3
+	
+# // Filtering Factor 패턴 파라메터 평균배열(filt[])을 만들때 평균을 취하는 신호수  ( 2 ~ 5 )	
+_sp.cm.Filt_Fac			3
+	
+# // 평균배열(filt[])의 최대값의 최소한의 수  ( 3 ~ 10 )	
+_sp.cm.Maxparam_Min		3
+	
+# // 패턴주기 검증에서 사용되는 최대값의 margin %  ( 5 ~ 20 )	
+_sp.cm.Pp_Max_Margin_P	10
+	
+# // 패턴주기 구하기에서 패턴비교에서 성공비율  ( 50 ~ 100 )	
+_sp.cm.Pp_Match_P		50
+
+
+# // MAKE AET
+# // 연속성 최대 지수 ( 50 ~ 100 )	
+_sp.cm.Conti_Thr		80
+	
+# // 이 값 이상의 펄스수의 AET는 무조건 REPORT 대상 ( 50 ~ 250 )	
+_sp.cm.Rpt_Pul_Cnt		50
+
